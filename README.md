@@ -58,3 +58,11 @@ print(fruits)
 nextnum=[[1,2],[3,4],[5,6]]
 print(nextnum[1])
 print(nextnum[2][0])
+
+# reverse str
+text='india won'
+words=text.split()
+w1=words[0][::-1]
+w2=words[1][::-1]
+result=''.join([w1,w2])
+print(result) 
