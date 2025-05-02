@@ -90,13 +90,13 @@ print("intersection:",a.intersection(b))
 print("difference:",a.difference(b))
 print("symmetricdiff:",a.symmetric_difference(b))
 
-#subset check
+# subset check
 a={1,2}
 b={1,2,3,4,5}
 print("a is subset to b:",a.issubset(b))
 print("b is subset to b:",b.issubset(a))
 
-#by using conditional op
+# by using conditional op
 a={1,2}
 b={1,2,3,4,5}
 print("subset or not:",a<=b)
@@ -108,13 +108,13 @@ print("proper superset:",b>a)
 nums=[1,2,2,5]
 single=set(nums)
 print(single)
-
+#
 x=set([1,2])
 y=set([1,2,3])
 if x.issubset(y):
     print("x is a subset od y")
 
-    
+   # 
   info={'name':'india','num':123}
 s=123
 for key,value in info.items():
