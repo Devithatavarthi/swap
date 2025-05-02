@@ -66,3 +66,57 @@ w1=words[0][::-1]
 w2=words[1][::-1]
 result=''.join([w1,w2])
 print(result) 
+# nested dict
+loc={
+    (40.1234,-75.00001):"NewYork",
+    (34.1223,-111.345):"vijaywada"
+}
+print(loc[(34.1223,-111.345)])
+#set impementations
+set_1={1,2,3,4,5}
+print(set_1)
+print("add and remove elements")
+set_1.add(6)
+print(set_1)
+set_1.remove(2)
+print(set_1)
+print(3 in set_1)
+print(10 not in set_1)
+
+a={1,2,3}
+b={3,4,5}
+print("union:",a.union(b))
+print("intersection:",a.intersection(b))
+print("difference:",a.difference(b))
+print("symmetricdiff:",a.symmetric_difference(b))
+
+#subset check
+a={1,2}
+b={1,2,3,4,5}
+print("a is subset to b:",a.issubset(b))
+print("b is subset to b:",b.issubset(a))
+
+#by using conditional op
+a={1,2}
+b={1,2,3,4,5}
+print("subset or not:",a<=b)
+print("proper subset:",a<b)
+print("superset or not:",a>=b)
+print("proper superset:",b>a)
+
+#set with lists
+nums=[1,2,2,5]
+single=set(nums)
+print(single)
+
+x=set([1,2])
+y=set([1,2,3])
+if x.issubset(y):
+    print("x is a subset od y")
+
+    
+  info={'name':'india','num':123}
+s=123
+for key,value in info.items():
+    if value==s:
+        print(f"key for value:'(s)':{key}")
