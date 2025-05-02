@@ -4,7 +4,7 @@ b=2
 a,b=b,a
 print(a,b)
 
-#swap temp
+# swap temp
 a=1
 b=2
 temp=a
@@ -13,7 +13,7 @@ b=temp
 print("a:",a)
 print("b:",b)
 
-#swap op using +,-,*,/
+# swap op using +,-,*,/
 a=int(input("enter the value of a:"))
 b=int(input("enter the value of b:"))
 a=a+b
@@ -22,7 +22,7 @@ a=a-b
 print(a)
 print(b)
 
-#swap *,/
+# swap *,/
 a=int(input())
 b=int(input())
 a=a*b
@@ -32,14 +32,14 @@ print()
 print(a)
 print(b)
 
-#list
+# list
 fruits=['apple','mango','cherry']
 print(fruits)
 print(fruits[1])
 fruits[2]='kiwi'
 print(fruits)
 
-#list index
+# list index
 nums=[0,1,2,3,4,5]
 print(len(nums))
 print(nums[1:5])
@@ -47,7 +47,7 @@ print(nums[:3])
 print(nums[::2])
 print(nums[::-1])
 
-#sort reverse
+#  sort reverse
 fruits=['apple','mango','cherry']
 fruits.sort()
 print(fruits)
@@ -72,7 +72,7 @@ loc={
     (34.1223,-111.345):"vijaywada"
 }
 print(loc[(34.1223,-111.345)])
-#set impementations
+# set impementations
 set_1={1,2,3,4,5}
 print(set_1)
 print("add and remove elements")
@@ -82,7 +82,7 @@ set_1.remove(2)
 print(set_1)
 print(3 in set_1)
 print(10 not in set_1)
-
+#
 a={1,2,3}
 b={3,4,5}
 print("union:",a.union(b))
