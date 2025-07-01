@@ -175,4 +175,14 @@ elif a<b:
     print("largest :",b)
 else:
     print("both numbers are equal") 
+# nested if
+    num=int(input("enterr the number"))
+if num>0:
+    print("positive")
+    if num%2==0:
+        print("even")
+    else:
+        print("odd")
+else:
+    print("numbrt isnon positive")          
             
