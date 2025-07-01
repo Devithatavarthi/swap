@@ -191,3 +191,8 @@ loop=0
 while loop<num:
     print("DEVI")
     loop+=1          
+#  frist n natural number upto 50
+num=int(input("enter anumber"))
+while num>=1:
+    print(num)
+    num-=1
