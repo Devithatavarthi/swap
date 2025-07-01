@@ -185,4 +185,9 @@ if num>0:
         print("odd")
 else:
     print("numbrt isnon positive")          
-            
+  # loop
+num= int(input("enter a number :"))
+loop=0
+while loop<num:
+    print("DEVI")
+    loop+=1          
