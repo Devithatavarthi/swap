@@ -126,8 +126,7 @@ for key,value in info.items():
 age=int(input("enter the age of the person:"))
 if age>=18:
     print("eligible to vote")
-
-    #  code for determinig the character entered by user 
+# code for determinig the character entered by user 
     char=input("press any key:")
 if char.isalpha():
     print(char,"is a character")
@@ -135,8 +134,7 @@ if char.isalpha():
         print(char,"is a digit")
     if char.isspace():
         print(char,"is a space")
-
-        #  code to check the number is positive or not
+# code to check the number is positive or not
 num=int(input("enter a number:"))
 if num>0:
     print(num,"is a positive")
@@ -144,7 +142,7 @@ if num>0:
         print(num,"is negitive")
         if num==0:
             print(num,"is zero")
-            #  program to enter any char if the enterd char is in  and vice versalowercase than covert the char into uppercase and viceversa '''
+# program to enter any char if the enterd char is in  and vice versalowercase than covert the char into uppercase and viceversa '''
 ch=input("enter a char from a to z")
 if ch>='A' and ch<='Z':
     ch=ch.lower()
@@ -152,8 +150,7 @@ if ch>='A' and ch<='Z':
 else:
     ch=ch.upper()
     print("the entered character was in lowercase...upper:"+ch)
-
-    #  code for checking the interval of a given number
+# code for checking the interval of a given number
 num=int(input("enter the number:"))
 if num>=0 and num<=10:
     print(num,"is in 0-10 range")
@@ -163,6 +160,19 @@ elif num>=21 and num<=30:
     print(num,"is in 21-30 range")
 else:
     print("out of range")
-        
-    
+  # if -else statement
+num=int (input("enter the number:"))
+if num%2==0:
+    print(num,"is even")
+else:
+    print(num,"is odd")      
+   # if elif else startment 
+a=int(input("enter a:"))
+b=int(input("enter b:"))
+if a>b:
+    print("largest :",a)
+elif a<b:
+    print("largest :",b)
+else:
+    print("both numbers are equal") 
             
