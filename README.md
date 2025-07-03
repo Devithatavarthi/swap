@@ -229,4 +229,10 @@ else:
 for number in range(1, 11):
     square = number ** 2
     print(f"The square of {number} is {square}")
-    
+   #  patterns
+   n=int(input("enter the size"))
+for i in range(n):
+    for j in range(n):
+        print('*',end='')
+    print()
+ 
