@@ -196,3 +196,19 @@ num=int(input("enter anumber"))
 while num>=1:
     print(num)
     num-=1
+# amstrong number
+num=int(input("enter the number: "))
+temp=num
+n=len(str(num))
+sum=0
+while temp>0:
+    digit=temp%10
+    sum +=digit**n
+    temp//=10
+print("latest value of sum:",sum)
+print("latest value of temp:",temp)
+if sum==num:
+    print("amstrong number")
+else:
+    print("not amstrong number")
+    
