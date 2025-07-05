@@ -245,3 +245,69 @@ for i in range(n):
     else:
       print(" ",end=" ")
   print()
+# butterfly
+n=int(input("enter the size"))
+for i in range(n):
+  for j in range(n):
+    if j==0 or j==n-1 or i==j or i+j==n-1:
+      print("*",end=" ")
+    else:
+      print(" ",end=" ")
+  print()
+# triangle
+  n=int(input("enter the size"))
+for i in range(n):
+  for j in range(n):
+    if j==0 or i==n-1 or i==j :
+      print("*",end=" ")
+    else:
+      print(" ",end=" ")
+  print()
+  # reverse triangle
+  n=int(input("enter the size"))
+for i in range(n):
+  for j in range(n):
+    if i==0 or j==n-1 or i==j :
+      print("*",end=" ")
+    else:
+      print(" ",end=" ")
+  print()
+  # plus
+  n=int(input("enter the size"))
+for i in range(n):
+  for j in range(n):
+    if i==n//2 or j==n//2:
+      print("*",end=" ")
+    else:
+      print(" ",end=" ")
+  print()
+  # pyramid
+  n=int(input("enter the size"))
+for i in range(n):
+  for j in range(n-i):
+      print("",end=" ")
+  for k in range(i):
+    print("*",end=" ")
+  print()
+  # reverse pyramid
+  n=int(input("enter the size"))
+for i in range(n,0,-1):
+  for j in range(n-i):
+      print('  ',end=" ")
+  for k in range(2*i-1):
+    print("* ",end=" ")
+  print()
+  # rhombus
+  n=int(input("enter the size"))
+for i in range(1,n+1):
+  for j in range(n-i):
+      print('  ',end=" ")
+  for k in range(2*i-1):
+    print("* ",end=" ")
+  print()
+for i in range(n-1,0,-1):
+  for j in range(n-i):
+      print('  ',end=" ")
+  for k in range(2*i-1):
+    print("* ",end=" ")
+  print()
