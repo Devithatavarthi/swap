@@ -460,4 +460,7 @@ num_list=list(map(int,num.split()))
 e,o=eo(num_list)
 print("even count:",e)
 print("odd count:",o)
-
+# lambdan udv: arthmetic op
+# op=lambda a,b,c:(a+b)-c
+expo=lambda a:a**a
+print(expo(3))
