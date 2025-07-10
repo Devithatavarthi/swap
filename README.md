@@ -311,3 +311,84 @@ for i in range(n-1,0,-1):
   for k in range(2*i-1):
     print("* ",end=" ")
   print()
+  # sperial
+n=int(input("enter the size"))
+matrix=[[' ']*n for _ in range(n)]
+ch=65
+top,left=0,0
+right,bottom=n-1,n-1
+while top<=bottom and left<=right:
+  for i in range(left,right+1):
+    matrix[top][i]=chr(ch)
+    ch+=1
+    if ch>90:
+      ch=65
+  top+=1
+  for i in range(top,bottom+1):
+    matrix[i][right]=chr(ch)
+    ch+=1
+    if ch>90:
+      ch=65
+  right-=1
+  for i in range(right,left-1,-1):
+    matrix[bottom][i]=chr(ch)
+    ch+=1
+    if ch>90:
+      ch=65
+  bottom-=1
+  for i in range(bottom,top-1,-1):
+    matrix[i][left]=chr(ch)
+    ch+=1
+    if ch>90:
+      ch=65
+  left+=1
+for row in matrix:
+  for val in row:
+    print(f"{val:3}",end='')
+  print()
+  # matrix
+  matrix=[[1,2,3,4],[5,6,7,8],[9,10,11,12,],[13,14,15,16]]
+row=len(matrix)
+cols=len(matrix[0])
+top,left=0,0
+right,bottom=cols-1,row-1
+while top<=bottom and left<=right:
+  for i in range(left,right+1):
+    print(matrix[top][i],end=' ')
+  top+=1
+  for i in range(top,bottom+1):
+    print(matrix[right][i],end=' ')
+  right-=1
+  for i in range(right,left-1,-1):
+    print(matrix[bottom][i],end=' ')
+  bottom-=1
+  for i in range(bottom,top-1,-1):
+    print(matrix[left][i],end=' ')
+  left+=1
+  # travaesal 
+n=int(input("enter the size:"))
+matrix=[[0]*n for _ in range(n)]
+top,left=0,0
+right,bottom=n-1,n-1
+num=1
+while top<=bottom and left<=right:
+  for i in range(left,right+1):
+    matrix[top][i]=num
+    num+=1
+  top+=1
+  for i in range(top,bottom+1):
+      matrix[i][right]=num
+      num+=1
+  right-=1
+  for i in range(right,left-1,-1):
+        matrix[bottom][i]=num
+        num+=1
+  bottom-=1
+  for i in range(bottom,top-1,-1):
+          matrix[i][left]=num
+          num+=1
+  left+=1
+for row in matrix:
+    for val in row:
+      print(f"{val:3}",end=' ')
+    print()
