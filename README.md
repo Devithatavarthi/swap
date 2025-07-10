@@ -392,3 +392,57 @@ for row in matrix:
     for val in row:
       print(f"{val:3}",end=' ')
     print()
+ # functions
+def hi(): #callee
+  print("hello students") # responses of callee
+  print("devi "*5)
+hi() # caller
+# functions parameters with return values
+def add(a,b):
+  return a+b
+student1=int(input("enter the money:"))
+student2=int(input("enter the money:"))
+total=add(student1,student2)
+print("total amount:",1total)
+# functions parameters/return values
+def add(student1, student2):
+  print("total:",student1+student2)
+student1=int(input("enter the money:"))
+student2=int(input("enter the money:"))
+add(student1,student2)
+# storeing data in value
+def value():
+  return 3.14159
+result=value()
+print("value on the function is",result)
+# user defined
+def get_name():
+  name=input("enter the name: ")
+  return name
+username=get_name()
+print("welcome",username)
+# names storing data 
+def hi(name):
+  print("hello",name)
+a=input("enter data:")
+hi(a)
+# artimatic 
+def cal(a,b):
+  return a+b,a-b,a*b,a/b
+a=int(input("enter a:"))
+b=int(input("enter b :"))
+sum, diff, pro, div =cal(a,b)
+print("sum=",sum)
+print("subtract=",diff)
+print("product",pro)
+print("divide=",div)
+# maximum and minimum
+def max_min(a,b,c):
+  return max(a,b,c),min(a,b,c)
+a=int(input("enter a:"))
+b=int(input("enter b:"))
+c=int(input("enter c:"))
+maxi,mini=max_min(a,b,c)
+print("maximum:",maxi)
+print("minimum:",mini)
+
