@@ -445,4 +445,19 @@ c=int(input("enter c:"))
 maxi,mini=max_min(a,b,c)
 print("maximum:",maxi)
 print("minimum:",mini)
+# write a function to count the lists of even  and odd numbers..calculate the even odd confirmantion in the function such that evaluated numbers list will be passed to the main program
+def eo(numbers):
+  e=0
+  o=0
+  for n in numbers:
+    if n%2==0:
+      e+=1
+    else:
+      o+=1
+  return e,o
+num=input("enter the numbers as space seperated:")
+num_list=list(map(int,num.split()))
+e,o=eo(num_list)
+print("even count:",e)
+print("odd count:",o)
 
