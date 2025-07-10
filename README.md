@@ -464,3 +464,14 @@ print("odd count:",o)
 # op=lambda a,b,c:(a+b)-c
 expo=lambda a:a**a
 print(expo(3))
+# sum
+add=lambda a,b:a+b
+print("sum:",add(7,8))
+# lambda statement
+is_even=lambda n: n%2==0
+print("is 6 even",is_even(6))
+# sq of numbers using lambda 
+nums=[1,2,3,4,5,6,7,8,9,10]
+sq=list(map(lambda n:n**2,nums))
+print(sq)
+
