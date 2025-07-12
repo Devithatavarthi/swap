@@ -474,4 +474,44 @@ print("is 6 even",is_even(6))
 nums=[1,2,3,4,5,6,7,8,9,10]
 sq=list(map(lambda n:n**2,nums))
 print(sq)
+# fwf
+def cal(a,b):
+  def add():
+    return a+b
+  def sub():
+      return a-b
+  def mul():
+        return a*b
+  print("addition",add())
+  print("subtraction",sub())
+  print("mutlipilaction",mul())
+a=int(input("enter a num"))
+b=int(input("enter b num"))
+cal(a,b)
+# mul fwf
+def mul_by(n):
+  def inner(x): # call inner function x=5
+    return x*n #x*2    x*3  
+  return inner
+times_2=mul_by(2) #n=2,
+times_3=mul_by(3) #n=3,
+print(times_2(5))
+print(times_3(10))
+# inner calle
+def greet(text):
+  def inner(name):
+    return f"{text},{name}!!!!!"
+  return inner
+hi=greet('helo')
+print(hi('deva'))
+# title calle
+def titled(title):
+  def greet(name):
+    return f"{title}{name}"
+  return greet  
+mr_greet=titled("mr.")
+dr_greet=titled("dr.")
+print(mr_greet("deva"))
+print(dr_greet("deva"))
+
 
