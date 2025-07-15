@@ -549,3 +549,13 @@ def rstring(s):
   return rstring(s[1:])+s[0]
 text= input("enter a word")
 print(rstring(text))
+# positional arg-*arg (1,2,3,4),(1.1,2.3,3.4),('a','b','c'),('apple','ball','cat')'''
+def sumnum(*args):
+  print(args[4])
+  return sum(args)
+print(sumnum(1,2,3,4,5,6,7,8,9,10))
+# keyword args** kwargs '''
+def info(**kwargs):
+  for key,value in kwargs.items():
+    print(f"{key}:{value}")
+info(name='deva',age=21,cgpa=8.9)
