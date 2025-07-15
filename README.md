@@ -527,6 +527,12 @@ if num<0:
 else:
     factorial(num)
     print(f"factorial of{num}is",fact)
+# recursion --1.direct recursion-function calls ifself
+# 2.indirect recursion-function calling another function
+# 3.head-direct or frist recursion call
+# 4.tail-last recursion call
+# 5.nested-recursion with in recursion
+# 6.tree
 # recursion
 def factorial(n):
   if n==0 or n==1:
