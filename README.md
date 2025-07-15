@@ -513,5 +513,39 @@ mr_greet=titled("mr.")
 dr_greet=titled("dr.")
 print(mr_greet("deva"))
 print(dr_greet("deva"))
-
-
+# factorial
+fact=1
+def factorial(n):
+  global fact
+  fact=1
+  for i in range(1,n+1):
+    fact *=i
+  return fact
+num=int(input("enter a number"))
+if num<0:
+  print("connot drive fact for -ve number")
+else:
+    factorial(num)
+    print(f"factorial of{num}is",fact)
+# recursion
+def factorial(n):
+  if n==0 or n==1:
+    return 1
+  return n*factorial(n-1)
+num=int(input("enter the value:"))
+value=factorial(num)
+print(value)  
+# sum natural numbers (recursive)
+def nsum(n):
+  if n==0:
+    return 0
+  return n+nsum(n-1)  
+num=int(input("enter n:"))
+print("sum of frist",num,"natural number is",nsum(num))
+# reverse recursion
+def rstring(s):
+  if len(s)==0:
+    return s
+  return rstring(s[1:])+s[0]
+text= input("enter a word")
+print(rstring(text))
