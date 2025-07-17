@@ -503,7 +503,7 @@ def greet(text):
     return f"{text},{name}!!!!!"
   return inner
 hi=greet('helo')
-print(hi('deva'))
+print(hi('devi'))
 # title calle
 def titled(title):
   def greet(name):
@@ -511,8 +511,8 @@ def titled(title):
   return greet  
 mr_greet=titled("mr.")
 dr_greet=titled("dr.")
-print(mr_greet("deva"))
-print(dr_greet("deva"))
+print(mr_greet("devi"))
+print(dr_greet("devi"))
 # factorial
 fact=1
 def factorial(n):
@@ -564,4 +564,56 @@ print(sumnum(1,2,3,4,5,6,7,8,9,10))
 def info(**kwargs):
   for key,value in kwargs.items():
     print(f"{key}:{value}")
-info(name='deva',age=21,cgpa=8.9)
+info(name='devi',age=21,cgpa=8.9)
+# recursions 
+# fibonacci 0 1 1 2 3 5 8 13 21 34 55......n
+def fib(n):
+  if n<=1:
+    return n
+  else:
+    return fib(n-1)+fib(n-2)
+num=int(input("enter terms:"))
+for i in range(num):
+  print(fib(i),end=' ')
+
+# indirect recursion
+# sum of 10 digits
+def dsum(n):
+  if n==0:
+    return 0
+  return n%10+temp(n//10)
+def temp(n):
+  return dsum(n)
+num=int(input("enter a 4 digit number:"))
+print("sum of digits:",dsum(num))
+
+# recursion
+# even or odd
+def one(n):
+  if n==0:
+    return true
+  else:
+      return two(n-1)
+def two(n):
+  if n==0:
+    return False
+  else:
+      return one(n-1) 
+num=int(input("enter a number:"))
+if one(num):
+  print(num,"is even")
+else:
+    print(num,"is odd")
+   # recursion 
+    def A(n):
+  if n<=0:
+    return
+  print("devi",n)
+  B(n-1)
+def B(n):
+  if n<=0:
+    return
+  print("thatavarthi",n)
+  A(n-1)
+num=int(input("enter a number:"))
+A(num)
