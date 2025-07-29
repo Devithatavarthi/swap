@@ -650,8 +650,15 @@ print("binary combinaations....")
 binary(length)
 
 # extensions
-#r+ ->fil;le should exist /overwrites existing content
-#w+ ->content clarity(refresh)
-#a+ ->creates a file if exists ,readings works only after seek() truncate()
+# r+ ->fil;le should exist /overwrites existing content
+# w+ ->content clarity(refresh)
+# a+ ->creates a file if exists ,readings works only after seek() truncate()
+with open('devi.txt','w+') as file:
+  text=input("enter any data")
+  file.write(text)
+  file.seek(0)
+  print("\n latest file content")
+  print(file.read())
+
 
 
