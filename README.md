@@ -649,3 +649,9 @@ length=int(input("enter length of string:"))
 print("binary combinaations....")
 binary(length)
 
+# extensions
+#r+ ->fil;le should exist /overwrites existing content
+#w+ ->content clarity(refresh)
+#a+ ->creates a file if exists ,readings works only after seek() truncate()
+
+
