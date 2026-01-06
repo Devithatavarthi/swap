@@ -142,7 +142,7 @@ if num>0:
         print(num,"is negitive")
         if num==0:
             print(num,"is zero")
-#  program to enter any char if the enterd char is in  and vice versalowercase than covert the char into uppercase and viceversa '''
+#  program to enter any char if the enterd char is in  and vice versa lowercase than covert the char into uppercase and viceversa '''
 ch=input("enter a char from a to z")
 if ch>='A' and ch<='Z':
     ch=ch.lower()
